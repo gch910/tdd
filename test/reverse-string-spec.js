@@ -23,7 +23,7 @@ describe("reverseString()", () => {
 
     it('should throw an TypeError when it is invoked with an argument that not a string', () => {
         const input = 42;
-        expect(reverseString).to.throw(TypeError);
+        expect(() => reverseString(input)).to.throw(TypeError);
     })
 })
 
